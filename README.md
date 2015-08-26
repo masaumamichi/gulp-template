@@ -49,5 +49,11 @@ BrowserSyncでサーバーを起動し、sass, html, jsファイルをwatchす�
 $ gulp
 ```
 
-## 編集項目
-gulp/config.js にgulpに使うディレクトリパスが書いてあるので、必要ならこれを編集する
+## 変えるとこ
+gulp/config.js
+```
+└─ gulp
+   └── config.js  // 設定ファイル
+
+```
+コンパイルに用いる各ディレクトリパス, autoprefixerに用いるブラウザバージョンを変えて。
