@@ -3,26 +3,31 @@ gulpのよく使うやつ集めたテンプレート
 
 ## 構造
 ```
-├─dest				// コンパイル先ディレクトリ
-│  
-├─gulp				// gulpファイル
+├─ dest	  // コンパイル先ディレクトリ
 │
-├─node_modules
+├─ gulp   // gulpファイル
+│   ├── config.js  // パス等設定ファイル
+│   ├── tasks      // 実行されるタスク
+│   └── util
 │
-└── src       // 開発用ディレクトリ
+├─ node_modules
+│
+└─ src    // 開発用ディレクトリ
     ├── copy   // そのままdestへコピーされる
     ├── ejs    // ejsをコンパイルしてdestへ
     ├── js     // main.jsをコンパイルしてdestへ
     └── sass   // sassファイルをコンパイルしてdestへ
 ```
 
-### ビルドツール
+### ビルドツール  
 
 * Gulp
 * gulp-ejs
 * gulp-ruby-sass
 * browserify
+* js-hint
 * BrowserSync
+* gulp.spritesmith
 
 
 ## インストール
@@ -43,3 +48,6 @@ BrowserSyncでサーバーを起動し、sass, html, jsファイルをwatchす�
 ```
 $ gulp
 ```
+
+## 編集項目
+gulp/config.js にgulpに使うディレクトリパスが書いてあるので、必要ならこれを編集する

@@ -1,6 +1,6 @@
-var src = './src';
-var dest = './dest';
-var jsSrc = src + '/js';
+var src = './src';        // 元ファイル
+var dest = './dest';      // コンパイル先
+var jsSrc = src + '/js';  // jsファイルの元パス
 
 module.exports = {
 

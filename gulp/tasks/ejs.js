@@ -4,7 +4,6 @@ var C = require('../config');
 var ejs = require('gulp-ejs');
 var browserSync = require('browser-sync');
 
-
 // ejsのコンパイル
 gulp.task("ejs", function() {
     gulp.src(
