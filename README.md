@@ -54,6 +54,5 @@ gulp/config.js
 ```
 └─ gulp
    └── config.js  // 設定ファイル
-
 ```
 コンパイルに用いる各ディレクトリパス, autoprefixerに用いるブラウザバージョンを変えて。
