@@ -15,7 +15,7 @@ module.exports = {
     'dest': {
       'root' : dest,
       'copy' : dest,
-      'sass' : dest + '/sass',
+      'sass' : dest + '/css',
       'ejs'  : dest,
       'img'  : dest + '/img'
     },

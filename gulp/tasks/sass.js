@@ -16,7 +16,7 @@ gulp.task('sass', function () {
     sass(C.src.sass, sassOption)
         .on('error', handleErrors)
         .pipe($.plumber())
-        .pipe($.autoprefixer({ browsers : C.autoprefixer_browsers}))
+        .pipe($.autoprefixer({ browsers : C.autoprefixer_browsers }))
         .pipe(gulp.dest(C.dest.sass))
         .pipe(browserSync.reload({ stream : true }));
 });
