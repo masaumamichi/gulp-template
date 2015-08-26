@@ -1,5 +1,5 @@
 {
-  "name": "gulp-templete",
+  "name": "gulp-template",
   "version": "0.0.0",
   "description": "gulpのよく使うやつ集めたテンプレート",
   "main": "gulpfile.js",

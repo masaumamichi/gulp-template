@@ -3,10 +3,10 @@ var $ = require('gulp-load-plugins')();
 var C = require('../config');
 
 // src/copy -> dest へコピーする
-gulp.task('copy', function () {
+gulp.task('imageCopy', function () {
     return gulp.src(
-        [C.src.copy + '/**'],
-        {base: C.src.copy}
+        [C.src.img + '/**'],
+        {base: C.src.img}
     )
-        .pipe(gulp.dest(C.dest.copy));
+        .pipe(gulp.dest(C.dest.img));
 });

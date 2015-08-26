@@ -1,4 +1,4 @@
-# gulp-templete
+# gulp-template
 gulpのよく使うやつ集めたテンプレート
 
 ## 構造

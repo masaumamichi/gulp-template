@@ -8,7 +8,7 @@ module.exports = {
       'root' : src,
       'copy' : src + '/copy',
       'sass' : src + '/sass',
-      'ejs'  : src + '/ejs',
+      'ejs'  : src,
       'img'  : src + '/img'
     },
 
