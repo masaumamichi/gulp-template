@@ -21,13 +21,13 @@ gulpのよく使うやつ集めたテンプレート
 
 ### ビルドツール  
 
-* Gulp
-* gulp-ejs
-* gulp-ruby-sass
-* browserify
-* js-hint
-* BrowserSync
-* gulp.spritesmith
+* Gulp              タスクランナー
+* gulp-ejs          ejs -> html コンパイル
+* gulp-ruby-sass    sass -> css コンパイル
+* browserify        jsファイルを統合
+* js-hint           jsファイルのチェック
+* BrowserSync       ローカルサーバーを起動
+* gulp.spritesmith  スプライト画像を作成
 
 
 ## インストール

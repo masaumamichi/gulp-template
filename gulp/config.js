@@ -4,16 +4,21 @@ var jsSrc = src + '/js';  // jsファイルの元パス
 
 module.exports = {
 
-    'srcRoot' : src,
-    'destRoot': dest,
+    'src': {
+      'root' : src,
+      'copy' : src + '/copy',
+      'sass' : src + '/sass',
+      'ejs'  : src + '/ejs',
+      'img'  : src + '/img'
+    },
 
-    'srcCopy' : src+'/copy',
-    'destCopy': dest,
-
-    'srcSass' : src + '/sass',
-    'destSass': dest+ '/css',
-
-    'srcEjs'  : src + '/ejs',
+    'dest': {
+      'root' : dest,
+      'copy' : dest,
+      'sass' : dest + '/sass',
+      'ejs'  : dest,
+      'img'  : dest + '/img'
+    },
 
     //browserSyncの設定
     browserSync: {
