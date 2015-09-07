@@ -9,6 +9,7 @@ module.exports = {
       'copy' : src + '/copy',
       'sass' : src + '/sass',
       'ejs'  : [src + '/**/*.ejs', '!' + src + '/**/_*.ejs'],
+      'imgCopy'  : [src + '/img/**/*.{gif,jpg,jpeg,png,svg}', '!' +src+ '/img/sprite/**/*'],
       'img'  : [src + '/img/**/*.{gif,jpg,jpeg,png,svg}', '!' +src+ '/img/sprite/**/*']
     },
 

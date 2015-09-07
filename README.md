@@ -47,7 +47,7 @@ $ gulp sprite
 ```
 
 ### gulp起動
-BrowserSyncでサーバーを起動し、sass, html, jsファイルをwatchする
+BrowserSyncでサーバーを起動し、sass, ejs, jsファイルをwatchする
 
 ```
 $ gulp
