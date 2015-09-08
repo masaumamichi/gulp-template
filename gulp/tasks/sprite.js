@@ -7,7 +7,8 @@ gulp.task('sprite', function () {
     imgName: 'sprite.png',
     cssName: 'sprite.scss',
     imgPath: '/img/sprite.png',
-    cssFormat: 'scss'
+    cssFormat: 'scss',
+    padding: 10
   }));
   spriteData.img.pipe(gulp.dest(C.dest.img));
   spriteData.css.pipe(gulp.dest(C.src.sass));
