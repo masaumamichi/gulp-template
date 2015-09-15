@@ -53,6 +53,15 @@ BrowserSyncでサーバーを起動し、sass, ejs, jsファイルをwatchする
 $ gulp
 ```
 
+### Buildする
+納品用に、destディレクトリを空にしてから再度コンパイルする
+jsファイルはminifyされる
+
+```
+$ npm run build
+```
+
+
 ## 変えるとこ
 #### gulpのパス設定
 gulp/config.js
