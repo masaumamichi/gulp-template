@@ -1,3 +1,4 @@
+'use strict';
 var src = './src';        // 元ファイル
 var dest = './dest';      // コンパイル先
 var jsSrc = src + '/js';  // jsファイルの元パス

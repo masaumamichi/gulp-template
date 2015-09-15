@@ -1,3 +1,4 @@
+'use strict';
 var browserify = require('browserify');
 var browserSync = require('browser-sync');
 var gulpConnect = require('gulp-connect');

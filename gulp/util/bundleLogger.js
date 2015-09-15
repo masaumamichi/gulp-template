@@ -1,3 +1,4 @@
+'use strict';
 // browserify用のログ処理
 var gutil = require('gulp-util');
 var prettyHrtime = require('pretty-hrtime');
