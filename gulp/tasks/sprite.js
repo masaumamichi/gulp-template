@@ -11,6 +11,6 @@ gulp.task('sprite', function () {
     cssFormat: 'scss',
     padding: 10
   }));
-  spriteData.img.pipe(gulp.dest(C.dest.img));
+  spriteData.img.pipe(gulp.dest(C.build.img));
   spriteData.css.pipe(gulp.dest(C.src.sass));
 });

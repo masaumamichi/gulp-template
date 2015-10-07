@@ -5,9 +5,9 @@ var del = require('del');
 var C = require('../config');
 var runSequence = require('run-sequence');
 
-// destを空にする
+// buildを空にする
 gulp.task('clean', function() {
-    return del(C.dest.root);
+    return del(C.build.root);
 });
 // logを出力
 gulp.task('outLog', function() {

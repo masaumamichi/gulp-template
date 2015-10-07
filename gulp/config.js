@@ -1,6 +1,6 @@
 'use strict';
 var src = './src';        // 元ファイル
-var dest = './dest';      // コンパイル先
+var build = './build';      // コンパイル先
 var jsSrc = src + '/js';  // jsファイルの元パス
 
 module.exports = {
@@ -14,18 +14,18 @@ module.exports = {
       'img'  : [src + '/img/**/*.{gif,jpg,jpeg,png,svg}', '!' +src+ '/img/sprite/**/*']
     },
 
-    'dest': {
-      'root' : dest,
-      'copy' : dest,
-      'sass' : dest + '/css',
-      'ejs'  : dest,
-      'img'  : dest + '/img'
+    'build': {
+      'root' : build,
+      'copy' : build,
+      'sass' : build + '/css',
+      'ejs'  : build,
+      'img'  : build + '/img'
     },
 
     //browserSyncの設定
     browserSync: {
         server: {
-            baseDir: dest
+            baseDir: build
         }
     },
 
@@ -44,7 +44,7 @@ module.exports = {
         bundleConfigs: [
             {
                 entries: jsSrc + '/main.js',
-                dest: dest + '/js',
+                build: build + '/js',
                 outputName: 'main.js'
             }
         ]
@@ -53,5 +53,15 @@ module.exports = {
     // jshintの対象ファイル
      lintfiles:[
         jsSrc + '/*.js'
-    ]
+    ],
+
+
+
+  jsLibConcat: {
+    name: 'lib.js',
+    srcs: [
+      './node_modules/jquery/dist/jquery.min.js'
+    ],
+    build: build + '/js'
+  }
 };

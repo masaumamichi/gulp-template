@@ -42,12 +42,12 @@ var browserifyTask = function (devMode, prodMode) {
                     .on('error', handleErrors)
                     .pipe(source(bundleConfig.outputName))
                     .pipe(buffer()).pipe($.uglify())
-                    .pipe(gulp.dest(bundleConfig.dest));
+                    .pipe(gulp.dest(bundleConfig.build));
             } else {
                 return b.bundle()
                     .on('error', handleErrors)
                     .pipe(source(bundleConfig.outputName))
-                    .pipe(gulp.dest(bundleConfig.dest))
+                    .pipe(gulp.dest(bundleConfig.build))
                     .pipe(browserSync.reload({
                         stream: true
                     })).pipe(gulpConnect.reload({

@@ -9,6 +9,6 @@ var browserSync = require('browser-sync');
 gulp.task("ejs", function() {
     gulp.src(C.src.ejs)
     .pipe(ejs())
-    .pipe(gulp.dest(C.dest.ejs))
+    .pipe(gulp.dest(C.build.ejs))
     .pipe(browserSync.reload({ stream : true }));
 });

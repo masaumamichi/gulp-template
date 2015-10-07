@@ -1,8 +1,5 @@
 'use strict';
-var $ = require('jquery');
 
 $(function(){
-
-  console.log($);
-
+  console.log('main.js');
 });

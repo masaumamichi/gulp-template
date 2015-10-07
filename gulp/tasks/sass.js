@@ -18,6 +18,6 @@ gulp.task('sass', function () {
         .on('error', handleErrors)
         .pipe($.plumber())
         .pipe($.autoprefixer({ browsers : C.autoprefixer_browsers }))
-        .pipe(gulp.dest(C.dest.sass))
+        .pipe(gulp.dest(C.build.sass))
         .pipe(browserSync.reload({ stream : true }));
 });
