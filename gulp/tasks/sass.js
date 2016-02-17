@@ -2,22 +2,23 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var C = require('../config');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var handleErrors = require('../util/handleErrors');
 var browserSync = require('browser-sync');
 
 var sassOption = {
-    style       : 'expanded',
-    sourcemap   : true,
-    noCache     : true
+  // outputStyle: 'compressed'
 };
 
 // sassコンパイル
 gulp.task('sass', function () {
-    sass(C.src.sass, sassOption)
-        .on('error', handleErrors)
-        .pipe($.plumber())
-        .pipe($.autoprefixer({ browsers : C.autoprefixer_browsers }))
-        .pipe(gulp.dest(C.build.sass))
-        .pipe(browserSync.reload({ stream : true }));
+  return gulp.src(C.src.sass)
+  .pipe(sourcemaps.init())
+  .pipe(sass(sassOption).on('error', handleErrors))
+  .pipe($.plumber())
+  .pipe($.autoprefixer({ browsers : C.autoprefixer_browsers }))
+  .pipe(sourcemaps.write())
+  .pipe(gulp.dest(C.build.sass))
+  .pipe(browserSync.reload({ stream : true }));
 });
