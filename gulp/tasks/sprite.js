@@ -12,5 +12,5 @@ gulp.task('sprite', function () {
     padding: 10
   }));
   spriteData.img.pipe(gulp.dest(C.build.img));
-  spriteData.css.pipe(gulp.dest(C.src.sass));
+  spriteData.css.pipe(gulp.dest(C.src.root + '/sass'));
 });
